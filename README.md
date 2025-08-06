@@ -3,7 +3,7 @@
 A **Mobile AI-powered waste classification system** built using **TensorFlow/Keras**, **TFLite**, and **Flutter**.  
 It detects whether a waste item is **Recyclable** or **Non-Recyclable** and provides **recycling guidance** for different material types.  
 
-## 🚀 Features
+## Features
 - **Real-time classification** of waste images (via camera or gallery)
 - **High-accuracy model** trained on multiple waste categories
 - **Recyclable / Non-Recyclable detection**
@@ -13,7 +13,7 @@ It detects whether a waste item is **Recyclable** or **Non-Recyclable** and prov
 
 ---
 
-## 📂 Dataset
+## Dataset
 The dataset is organized into two main categories:
 
 ```
@@ -106,7 +106,19 @@ with open('recycle_classifier.tflite', 'wb') as f:
 
 ---
 
-## 📱 Flutter App Integration
+## Model Training & Evaluation Screenshots
+
+### Sample Training Images
+![Training Samples](screenshots/training_samples.png)
+
+### Model Summary
+![Model Summary](screenshots/model_summary.png)
+
+### Training Logs
+![Training Logs](screenshots/training_logs.png)
+
+
+## Flutter App Integration
 - **Framework**: Flutter
 - **Plugin**: [`tflite_flutter`](https://pub.dev/packages/tflite_flutter)
 - **Assets**:
@@ -120,7 +132,7 @@ with open('recycle_classifier.tflite', 'wb') as f:
 
 ---
 
-## 🖼️ App Flow
+## App Flow
 1. **User selects/captures an image**
 2. **Image is resized and preprocessed** to match model input
 3. **Model predicts class & confidence score**
@@ -129,7 +141,7 @@ with open('recycle_classifier.tflite', 'wb') as f:
 
 ---
 
-## 📋 Example Output
+## Example Output
 **Prediction:**
 ```
 Plastic (Recyclable) — 85%
@@ -142,7 +154,7 @@ Plastic (Recyclable) — 85%
 
 ---
 
-## 🏗️ Installation & Setup
+## Installation & Setup
 
 ### **Model Training (Python)**
 ```bash
@@ -166,7 +178,7 @@ flutter:
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 - Improve dataset balance & diversity
 - Add more waste categories
 - Support multi-label classification for mixed waste
